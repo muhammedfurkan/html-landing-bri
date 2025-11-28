@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>bri.com.tr - Stok yok, Risk yok, Kazanç çok.</title>
+  
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/png" href="./assets/img/fav/fav.jpg">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+    
+    <!-- SweetAlert2 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Contact Form Configuration -->
+    <script src="./assets/js/contact-config.js"></script>
+    
+    <style>
+    .my-class {
+    color: #193470;
+    }
+    </style>
+
+</head>
+<body>
+
+    <!-- Header start here -->
+    <header id="ub-header" class="ub-header">
+        <div class="ub-header__container container">
+          <nav class="ub-header__navigation">
+            <div class="ub-header__branding">
+             <a href="index.html" class="header__logo">
+                <img src="./assets/img/logo/logo.svg" alt="Website Logo" class="ub-mobile-nav__logo">
+              </a>
+            </div>
+            <div class="ub-header__menu">
+              <ul class="menu">
+                <li class="menu__item"><a href="index.html" class="menu__link">Ana Sayfa</a></li>
+                <li class="menu__item"><a href="about.html" class="menu__link">Hakkımızda</a></li>
+                <li class="menu__item"><a href="pricing.html" class="menu__link">Fiyatlar</a></li>
+                <!--
+                <li class="menu__item menu__item--has-dropdown">
+                  <a href="#" class="menu__link" aria-haspopup="true" aria-expanded="false">All Pages</a>
+                  <ul class="menu__submenu">
+                    <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                    <li class="menu__item"><a href="blog-single.html" class="menu__link">Blog Details</a></li>
+                    <li class="menu__item"><a href="careers.html" class="menu__link">Careers</a></li>
+                    <li class="menu__item"><a href="careers-details.html" class="menu__link">Careers Details</a></li>
+                    <li class="menu__item"><a href="feature-single.html" class="menu__link">Features Details</a></li>
+                    <li class="menu__item"><a href="integrations.html" class="menu__link">Integrations</a></li>
+                    <li class="menu__item"><a href="integrations-details.html" class="menu__link">Integrations Details</a></li>
+                    <li class="menu__item"><a href="pricing.html" class="menu__link">Pricing</a></li>
+                    <li class="menu__item"><a href="pricing-details.html" class="menu__link">Pricing Details</a></li>
+                    <li class="menu__item"><a href="team-details.html" class="menu__link">Team Details</a></li>
+                    <li class="menu__item"><a href="privacy-policy.html" class="menu__link">Privacy & Policy</a></li>
+                    <li class="menu__item"><a href="licenses.html" class="menu__link">Licenses</a></li>
+                    <li class="menu__item"><a href="404.html" class="menu__link">404</a></li>
+                    <li class="menu__item"><a href="terms-and-condition.html" class="menu__link">Terms & Condition</a></li>
+                  </ul>
+                </li>-->
+                <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li> 
+                <li class="menu__item"><a href="contact.html" class="menu__link">İletişim</a></li> 
+              </ul>
+            </div>
+            <div class="ub-header__actions">
+              <a href="https://briportal.com/login" class="header__button header__button--login">Giriş</a>
+              <a href="https://briportal.com/register" class="ub-header__button header__button--get-started">Üye Ol</a>
+              <button class="ub-header__menu-toggle" aria-label="Toggle Menu">☰</button>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <!-- Header end here -->
+      
+    <!-- Mobile start navigation -->
+    <div id="ub-mobile-nav" class="ub-mobile-nav">
+        <div class="ub-mobile-nav__header">
+            <div class="ub-mobile-nav__branding">
+                <a href="index.html">
+                    <img src="./assets/img/logo/logo.svg" alt="Mobile Logo" class="ub-mobile-nav__logo">
+                </a>
+            </div>
+            <button class="ub-mobile-nav__close-btn" aria-label="Close Menu">×</button>
+        </div>
+        <ul class="ub-mobile-nav__menu">
+            <li class="ub-mobile-nav__item"><a href="index.html" class="ub-mobile-nav__link">Ana Sayfa</a></li>
+            <li class="ub-mobile-nav__item"><a href="./about.html" class="ub-mobile-nav__link">Hakkımızda</a></li>
+            <li class="ub-mobile-nav__item"><a href="pricing.html" class="ub-mobile-nav__link">Fiyatlar</a></li>
+            <li class="ub-mobile-nav__item"><a href="blog.html" class="ub-mobile-nav__link">Blog</a></li>
+            <li class="ub-mobile-nav__item"><a href="contact.html" class="ub-mobile-nav__link">İletişim</a></li>
+        </ul>
+        <div class="ub-mobile-nav__actions">
+            <a href="https://briportal.com/login" class="ub-mobile-nav__button ub-mobile-nav__button--login">Giriş</a>
+            <a href="https://briportal.com/register" class="ub-mobile-nav__button ub-mobile-nav__button--get-started">Üye Ol</a>
+        </div>
+    </div>
+    <!-- Mobile end navigation -->
+
+    <main>
+        <!-- Contact Form Start -->
+        <section id="ub-contact" class="ub-contact" data-aos="fade-up" data-aos-delay="100">
+            <div class="ub-contact-info__container container">
+                <div class="ub-contact-info__content">
+                    <div class="ub-contact-info__header">
+                        <h2 class="ub-contact-info__title" data-aos="fade-up" data-aos-delay="200">İletişim Bilgilerimiz</h2>
+                    </div>
+                    
+                    <div class="ub-contact-info__wrapper">
+                        <!-- Contact Details -->
+                        <div class="ub-contact-info__details" data-aos="fade-up" data-aos-delay="300">
+                            <div class="ub-contact-info__item">
+                                <div class="ub-contact-info__icon-wrapper">
+                                    <i class="fas fa-map-marker-alt ub-contact-info__icon"></i>
+                                </div>
+                                <div class="ub-contact-info__text">
+                                    <h3 class="ub-contact-info__item-title">Adres</h3>
+                                    <a href="https://maps.app.goo.gl/uGfBGjnX4js45Eua8" class="ub-contact-info__item-text">YAHYAKAPTAN MAH. YENİ KANDIRA YOLU CAD NO: 24<br>İZMİT/ KOCAELİ</a>
+                                </div>
+                            </div>
+
+                            <div class="ub-contact-info__item">
+                                <div class="ub-contact-info__icon-wrapper">
+                                    <i class="fas fa-phone ub-contact-info__icon"></i>
+                                </div>
+                                <div class="ub-contact-info__text">
+                                    <h3 class="ub-contact-info__item-title">Telefon</h3>
+                                    <p class="ub-contact-info__item-text"><a href="tel:+901234567890">+90 (123) 456-7890</a></p>
+                                </div>
+                            </div>
+
+                            <div class="ub-contact-info__item">
+                                <div class="ub-contact-info__icon-wrapper">
+                                    <i class="fas fa-envelope ub-contact-info__icon"></i>
+                                </div>
+                                <div class="ub-contact-info__text">
+                                    <h3 class="ub-contact-info__item-title">E-posta</h3>
+                                    <p class="ub-contact-info__item-text"><a href="mailto:info@bri.com.tr">bilgi@bri.com.tr</a></p>
+                                </div>
+                            </div>
+
+                            <div class="ub-contact-info__item">
+                                <div class="ub-contact-info__icon-wrapper">
+                                    <i class="fas fa-clock ub-contact-info__icon"></i>
+                                </div>
+                                <div class="ub-contact-info__text">
+                                    <h3 class="ub-contact-info__item-title">Çalışma Saatleri</h3>
+                                    <p class="ub-contact-info__item-text">Pazartesi - Cuma: 09:00 - 18:00<br>Cumartesi: 10:00 - 16:00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map -->
+                        <div class="ub-contact-info__map-wrapper" data-aos="fade-up" data-aos-delay="400">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2707.177926002169!2d29.978332384249256!3d40.78842880312316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1760905733299!5m2!1str!2str" 
+                                width="100%" 
+                                height="400" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                class="ub-contact-info__iframe">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ub-contact__container container">
+                <div class="ub-contact__content">
+                    <div class="ub-contact__header">
+                        <h2 class="ub-contact__title" data-aos="fade-up" data-aos-delay="200">Bize Yazın</h2>
+                    </div>
+                    <form id="contact-form" class="ub-contact__form" method="post" data-aos="fade-up" data-aos-delay="300">
+                        <div class="ub-contact__input-group">
+                            <label for="first-name" class="ub-contact__label">Adınız</label>
+                            <input type="text" id="first-name" class="ub-contact__input" name="first_name" placeholder="Adınızı girin" required>
+                        </div>
+                        <div class="ub-contact__input-group">
+                            <label for="last-name" class="ub-contact__label">Soyadınız</label>
+                            <input type="text" id="last-name" class="ub-contact__input" name="last_name" placeholder="Soyadınızı girin" required>
+                        </div>
+                        <div class="ub-contact__input-group">
+                            <label for="email" class="ub-contact__label">E-posta Adresi</label>
+                            <input type="email" id="email" class="ub-contact__input" name="email" placeholder="E-posta adresinizi girin" required>
+                        </div>
+                        <div class="ub-contact__input-group">
+                            <label for="message" class="ub-contact__label">Mesaj</label>
+                            <textarea id="message" class="ub-contact__textarea" name="message" rows="5" placeholder="Mesajınızı yazın" required></textarea>
+                        </div>                        
+                        <div class="ub-contact__btn-wrapper">
+                            <button type="submit" class="ub-contact__btn">Gönder</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Information and Map End -->
+     </main>
+
+        <!-- footer start here -->
+        <footer id="footer" class="footer"> 
+            <div class="footer__container container">
+                <div class="footer__content">
+                    <!-- Newsletter Section -->
+                    <div class="footer__newsletter">
+                        <div class="footer__newsletter-heading">
+                            <h3 class="footer__newsletter-title">Bültenimize Katılın</h3>
+                            <p class="footer__newsletter-desc">E-ticaret dünyasından haberler ve özel fırsatlar için abone olun.</p>
+                        </div>
+                        <div class="footer__form-wrapper">
+                            <form action="#" class="footer__newsletter-form">
+                                <div class="footer__input-wrapper">
+                                    <input type="email" class="footer__input" placeholder="E-posta adresiniz">
+                                    <input class="btn footer__submit-btn" type="submit" value="Abone Ol">
+                                </div>
+                                <p id="footer__form-message" class="footer__form-message success-message"></p>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="footer__content-wrapper">
+                        <!-- Logo Section Wrapper -->
+                        <div class="footer__logo-wrapper">
+                            <div class="footer__logo-inner-wrapper">
+                                <a href="index.html" class="footer__logo-link">
+                                    <img src="./assets/img/logo/logo.svg" alt="Logo" class="footer__logo-img">
+                                </a>
+                                <p class="footer__desc">Bri.com.tr stok tutmadan satış yapmak isteyen işletmeler için dropshipping, lojistik ve XML entegrasyon çözümleri sunar.</p>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Section Wrapper -->
+                        <div class="footer__navigation-wrapper">
+                            <div class="footer__navigation-column">
+                                <h3 class="footer__navigation-title">Sayfalar</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="./about.html" class="footer__link">Hakkımızda</a></li>
+                                    <li class="footer__link-item"><a href="./pricing.html" class="footer__link">Fiyatlarımız</a></li>
+                                    <li class="footer__link-item"><a href="./blog.html" class="footer__link">Blog</a></li>
+                                    <li class="footer__link-item"><a href="./contact.html" class="footer__link">İletişim</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__navigation-column">
+                                <h3 class="footer__navigation-title">Şirket</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="./about.html" class="footer__link">Hakkımızda</a></li>
+                                    <li class="footer__link-item"><a href="./blog.html" class="footer__link">Blog</a></li>
+                                     <li class="footer__link-item"><a href="./pricing.html" class="footer__link">Fiyatlarımız</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__navigation-column">
+                                <h3 class="footer__navigation-title">Linkler</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="https://briportal.com/" class="footer__link">Bri Portal</a></li>
+                                    <li class="footer__link-item"><a href="https://babynow.com.tr/" class="footer__link">Babynow Shop</a></li>
+                                    <li class="footer__link-item"><a href="https://babynowtoptan.com.tr/" class="footer__link">Babynow Toptan</a></li>
+                                    <li class="footer__link-item"><a href="https://bri.com.tr" class="footer__link">Bri</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__navigation-column">
+                                <h3 class="footer__navigation-title">Diğer</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="#" class="footer__link">Lisanslar</a></li>
+                                    <li class="footer__link-item"><a href="privacy-policy.html" class="footer__link">Gizlilik Politikası</a></li>
+                                    <li class="footer__link-item"><a href="./terms-and-condition.html" class="footer__link">Hizmet Şartları</a></li>
+                                    <li class="footer__link-item"><a href="./404.html" class="footer__link">404</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Copyright Section -->
+                    <div class="footer__copyright">
+                        <div class="footer__copyright-text">
+                            <p>&copy;<span class="footer__company-name">bri.com.tr</span>. All rights reserved. 2025  
+                            <span class="footer__divider">|</span> Designed by <a href="https://www.telegram.com/@By_Azade" class="footer__link">ByAzade</a>  
+                        </div>
+                        
+                        <div class="footer__social-links">
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item">
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/LinkedIn.svg" alt="LinkedIn Icon" class="footer__social-icon">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/X.svg" alt="Twitter Icon" class="footer__social-icon">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a href="https://www.instagram.com/bri.com.tr" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/instagram.svg" alt="Instagram Icon" class="footer__social-icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end here --> 
+
+ 
+    <!-- js  -->
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- SweetAlert2 js  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Swiper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Main js -->
+    <script src="./assets/js/srcipts.js"></script>
+    <!-- Form js -->
+    <script src="./assets/js/form.js"></script>    
+</body>
+</html>

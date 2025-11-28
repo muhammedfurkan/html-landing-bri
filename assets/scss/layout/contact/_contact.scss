@@ -1,0 +1,236 @@
+// contact page
+.ub-contact {
+    &__content{
+        background-color: $light-lavender;
+        max-width: 600px;
+        padding: 3rem;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem; 
+    } 
+
+    &__title{
+        @extend .section-title; 
+        font-size: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    &__input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    &__label {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: $dark-neutral; 
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        padding: 12px 14px;
+        border-radius: 5px; 
+        border: none;
+        font-family: $font-family-body;
+
+        &::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: $gray-medium;
+            font-family: $font-family-body;
+        }
+
+        &:focus {
+            outline: 2px solid $primary-color;
+        }
+    }
+
+    &__textarea {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+
+        &::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: $gray-medium;
+            font-family: $font-family-body;
+        }
+
+        &:focus {
+            outline: 2px solid $primary-color;
+        }
+    }
+
+    &__btn {
+        @include btn();
+        margin-top: 20px;
+    }
+
+    @media (max-width: 768px) { 
+        &__content{
+            padding:3rem 1rem ;
+        }
+    } 
+}
+
+// contact info and map
+.ub-contact-info {
+    padding: 4rem 0;
+    background-color: #e3edf5;
+
+    &__container {
+        max-width: 1200px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__title {
+        @extend .section-title;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: $dark-neutral;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__item {
+        display: flex;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        background-color: #e3edf5;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+    }
+
+    &__icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        background: #193470;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    &__icon {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__item-title {
+        font-weight: 600;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        color: $dark-neutral;
+        margin-bottom: 0.5rem;
+    }
+
+    &__item-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: $gray-medium;
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #193470;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__map-wrapper {
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    &__iframe {
+        display: block;
+        border: none;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 2rem 0;
+
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__wrapper {
+            gap: 1.5rem;
+        }
+
+        &__item {
+            padding: 1.25rem;
+            gap: 1rem;
+        }
+
+        &__icon-wrapper {
+            width: 45px;
+            height: 45px;
+            min-width: 45px;
+        }
+
+        &__icon {
+            font-size: 1.25rem;
+        }
+
+        &__item-title {
+            font-size: 1rem;
+        }
+
+        &__item-text {
+            font-size: 0.9rem;
+        }
+    }
+}

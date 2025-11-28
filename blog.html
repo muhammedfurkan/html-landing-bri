@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bri.com.tr - Stok yok, Risk yok, Kazanç çok.</title>
+  
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/png" href="./assets/img/fav/fav.jpg">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+    
+    <!-- SweetAlert2 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/lucide@latest/dist/umd/lucide.js">
+   
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Temporary overrides for new mobile menu look (can be merged into main.css after SCSS compile) -->
+    <link rel="stylesheet" href="./css/_overrides-mobile-menu.css">
+    
+    <style>
+    .my-class {
+    color: #193470;
+    }
+    </style>
+
+</head>
+<body>
+
+    <!-- Header start here -->
+    <header id="ub-header" class="ub-header">
+        <div class="ub-header__container container">
+          <nav class="ub-header__navigation">
+            <div class="ub-header__branding">
+             <a href="index.html" class="header__logo">
+                <img src="./assets/img/logo/logo.svg" alt="Website Logo" class="ub-mobile-nav__logo">
+              </a>
+            </div>
+            <div class="ub-header__menu">
+              <ul class="menu">
+                <li class="menu__item"><a href="index.html" class="menu__link">Ana Sayfa</a></li>
+                <li class="menu__item"><a href="about.html" class="menu__link">Hakkımızda</a></li>
+                <li class="menu__item"><a href="pricing.html" class="menu__link">Fiyatlar</a></li>
+                <!--
+                <li class="menu__item menu__item--has-dropdown">
+                  <a href="#" class="menu__link" aria-haspopup="true" aria-expanded="false">All Pages</a>
+                  <ul class="menu__submenu">
+                    <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                    <li class="menu__item"><a href="blog-single.html" class="menu__link">Blog Details</a></li>
+                    <li class="menu__item"><a href="careers.html" class="menu__link">Careers</a></li>
+                    <li class="menu__item"><a href="careers-details.html" class="menu__link">Careers Details</a></li>
+                    <li class="menu__item"><a href="feature-single.html" class="menu__link">Features Details</a></li>
+                    <li class="menu__item"><a href="integrations.html" class="menu__link">Integrations</a></li>
+                    <li class="menu__item"><a href="integrations-details.html" class="menu__link">Integrations Details</a></li>
+                    <li class="menu__item"><a href="pricing.html" class="menu__link">Pricing</a></li>
+                    <li class="menu__item"><a href="pricing-details.html" class="menu__link">Pricing Details</a></li>
+                    <li class="menu__item"><a href="team-details.html" class="menu__link">Team Details</a></li>
+                    <li class="menu__item"><a href="privacy-policy.html" class="menu__link">Privacy & Policy</a></li>
+                    <li class="menu__item"><a href="licenses.html" class="menu__link">Licenses</a></li>
+                    <li class="menu__item"><a href="404.html" class="menu__link">404</a></li>
+                    <li class="menu__item"><a href="terms-and-condition.html" class="menu__link">Terms & Condition</a></li>
+                  </ul>
+                </li>-->
+                <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li> 
+                <li class="menu__item"><a href="contact.html" class="menu__link">İletişim</a></li> 
+              </ul>
+            </div>
+            <div class="ub-header__actions">
+              <a href="https://briportal.com/login" class="header__button header__button--login">Giriş</a>
+              <a href="https://briportal.com/register" class="ub-header__button header__button--get-started">Üye Ol</a>
+              <button class="ub-header__menu-toggle" aria-label="Toggle Menu">☰</button>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <!-- Header end here -->
+      
+    <!-- Mobile start navigation -->
+    <div id="ub-mobile-nav" class="ub-mobile-nav">
+        <div class="ub-mobile-nav__header">
+            <div class="ub-mobile-nav__branding">
+                <a href="index.html">
+                    <img src="./assets/img/logo/logo.svg" alt="Mobile Logo" class="ub-mobile-nav__logo">
+                </a>
+            </div>
+            <button class="ub-mobile-nav__close-btn" aria-label="Close Menu">×</button>
+        </div>
+        <ul class="ub-mobile-nav__menu">
+            <li class="ub-mobile-nav__item"><a href="index.html" class="ub-mobile-nav__link">Ana Sayfa</a></li>
+            <li class="ub-mobile-nav__item"><a href="./about.html" class="ub-mobile-nav__link">Hakkımızda</a></li>
+            <li class="ub-mobile-nav__item"><a href="pricing.html" class="ub-mobile-nav__link">Fiyatlar</a></li>
+            <li class="ub-mobile-nav__item"><a href="blog.html" class="ub-mobile-nav__link">Blog</a></li>
+            <li class="ub-mobile-nav__item"><a href="contact.html" class="ub-mobile-nav__link">İletişim</a></li>
+        </ul>
+        <div class="ub-mobile-nav__actions">
+            <a href="https://briportal.com/login" class="ub-mobile-nav__button ub-mobile-nav__button--login">Giriş</a>
+            <a href="https://briportal.com/register" class="ub-mobile-nav__button ub-mobile-nav__button--get-started">Üye Ol</a>
+        </div>
+    </div>
+    <!-- Mobile end navigation -->
+
+
+    <main>
+        
+        <!-- Blog section start here -->
+        <section id="ub-blog" class="ub-blog" data-aos="fade-up" data-aos-delay="100">
+            <div class="ub-blog__container container">
+                <div class="ub-blog__header" data-aos="fade-up">
+                    <div class="ub-blog__subtitle-area" data-aos="fade-up" data-aos-delay="200">
+                        <div class="ub-blog__subtitle-group">
+                            <i data-lucide="rss" class="my-class"></i>
+                            <span class="ub-blog__subtitle">Bloğumuz</span>
+                        </div>
+                    </div>
+                    <h2 class="ub-blog__title" data-aos="fade-up" data-aos-delay="300">E-Ticaret Dünyasından Haberler</h2>
+                    <p class="ub-blog__description" data-aos="fade-up" data-aos-delay="400">Dropshipping ve e-ticaret hakkında güncel bilgiler ve ipuçları.</p>
+                </div>
+        
+                <div class="ub-blog__cards" data-aos="fade-up" data-aos-delay="500">
+                    <!-- Blog yazıları buraya otomatik olarak yüklenecek -->
+                </div>
+            </div>
+        </section>
+        <!-- Blog section end here -->
+
+        <!-- Latest posts section start here -->
+        <section id="ub-latest-posts" class="ub-latest-posts" data-aos="fade-up" data-aos-delay="100">
+            <div class="ub-latest-posts__container container">
+                <div class="ub-latest-posts__header" data-aos="fade-up">
+                    <h2 class="ub-latest-posts__section-title" data-aos="fade-up" data-aos-delay="200">Son Yazılar</h2>
+                    <nav class="ub-latest-posts__filter" data-aos="fade-up" data-aos-delay="300">
+                        <ul class="ub-latest-posts__filter-list">
+                            <li><a class="ub-latest-posts__filter-btn ub-latest-posts__filter-btn--active" href="#" data-category="all">Tümü</a></li>
+                            <li><a class="ub-latest-posts__filter-btn" href="#" data-category="tech-company">Teknoloji</a></li>
+                            <li><a class="ub-latest-posts__filter-btn" href="#" data-category="analytics">Analitik</a></li>
+                            <li><a class="ub-latest-posts__filter-btn" href="#" data-category="business">İşletme</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="ub-latest-posts__grid">
+                    <!-- Each post card wrapped with the <a> tag -->
+                    <a href="./blog-single.html" class="ub-latest-posts__card" data-category="tech-company" data-aos="fade-up" data-aos-delay="400">
+                        <div class="ub-latest-posts__thumbnail">
+                            <img src="./assets/img/latest-post/post1.png" alt="Post 1">
+                        </div>
+                        <div class="ub-latest-posts__content">
+                            <div class="ub-latest-posts__meta">
+                                <div class="ub-latest-posts__category">Teknoloji</div>
+                                <div class="ub-latest-posts__date">
+                                    <img src="./assets/icons/calendar.svg" alt="Calendar Icon">
+                                    <span>10 Temmuz 2024</span>
+                                </div>
+                            </div>
+                            <h3 class="ub-latest-posts__article-title">Çevrimiçi para transferlerinizi güvende tutmak için 10 süper önemli ipucu!</h3>
+                        </div>
+                    </a>
+
+                    <a href="./blog-single.html" class="ub-latest-posts__card" data-category="tech-company" data-aos="fade-up" data-aos-delay="500">
+                        <div class="ub-latest-posts__thumbnail">
+                            <img src="./assets/img/latest-post/post6.png" alt="Post 1">
+                        </div>
+                        <div class="ub-latest-posts__content">
+                            <div class="ub-latest-posts__meta">
+                                <div class="ub-latest-posts__category">Teknoloji</div>
+                                <div class="ub-latest-posts__date">
+                                    <img src="./assets/icons/calendar.svg" alt="Calendar Icon">
+                                    <span>10 Temmuz 2024</span>
+                                </div>
+                            </div>
+                            <h3 class="ub-latest-posts__article-title">Güvenli çevrimiçi bankacılık için en iyi 10 güvenlik uygulaması!</h3>
+                        </div>
+                    </a>
+
+                    <a href="./blog-single.html" class="ub-latest-posts__card" data-category="analytics" data-aos="fade-up" data-aos-delay="600">
+                        <div class="ub-latest-posts__thumbnail">
+                            <img src="./assets/img/latest-post/post2.png" alt="Post 2">
+                        </div>
+                        <div class="ub-latest-posts__content">
+                            <div class="ub-latest-posts__meta">
+                                <div class="ub-latest-posts__category">Analitik</div>
+                                <div class="ub-latest-posts__date">
+                                    <img src="./assets/icons/calendar.svg" alt="Calendar Icon">
+                                    <span>10 Temmuz 2024</span>
+                                </div>
+                            </div>
+                            <h3 class="ub-latest-posts__article-title">Cüzdanınızı koruyun! Bilmeniz gereken en iyi 10 çevrimiçi güvenlik ipucu.</h3>
+                        </div>
+                    </a>
+
+                    <a href="./blog-single.html" class="ub-latest-posts__card" data-category="business" data-aos="fade-up" data-aos-delay="700">
+                        <div class="ub-latest-posts__thumbnail">
+                            <img src="./assets/img/latest-post/post5.png" alt="Post 3">
+                        </div>
+                        <div class="ub-latest-posts__content">
+                            <div class="ub-latest-posts__meta">
+                                <div class="ub-latest-posts__category">İşletme</div>
+                                <div class="ub-latest-posts__date">
+                                    <img src="./assets/icons/calendar.svg" alt="Calendar Icon">
+                                    <span>10 Temmuz 2024</span>
+                                </div>
+                            </div>
+                            <h3 class="ub-latest-posts__article-title">Çevrimiçi güvenlik oyununuzu geliştirmek mi istiyorsunuz? Takip edilecek 10 kolay ipucu!</h3>
+                        </div>
+                    </a>
+
+                    <a href="./blog-single.html" class="ub-latest-posts__card" data-category="business" data-aos="fade-up" data-aos-delay="800">
+                        <div class="ub-latest-posts__thumbnail">
+                            <img src="./assets/img/latest-post/post3.png" alt="Post 3">
+                        </div>
+                        <div class="ub-latest-posts__content">
+                            <div class="ub-latest-posts__meta">
+                                <div class="ub-latest-posts__category">İşletme</div>
+                                <div class="ub-latest-posts__date">
+                                    <img src="./assets/icons/calendar.svg" alt="Calendar Icon">
+                                    <span>10 Temmuz 2024</span>
+                                </div>
+                            </div>
+                            <h3 class="ub-latest-posts__article-title">Paranızı çevrimiçi güvende tutmak mı istiyorsunuz? Bilmeniz gereken 10 önemli ipucu!</h3>
+                        </div>
+                    </a>
+
+                    <a href="./blog-single.html" class="ub-latest-posts__card" data-category="business" data-aos="fade-up" data-aos-delay="900">
+                        <div class="ub-latest-posts__thumbnail">
+                            <img src="./assets/img/latest-post/post4.png" alt="Post 3">
+                        </div>
+                        <div class="ub-latest-posts__content">
+                            <div class="ub-latest-posts__meta">
+                                <div class="ub-latest-posts__category">İşletme</div>
+                                <div class="ub-latest-posts__date">
+                                    <img src="./assets/icons/calendar.svg" alt="Calendar Icon">
+                                    <span>10 Temmuz 2024</span>
+                                </div>
+                            </div>
+                            <h3 class="ub-latest-posts__article-title">Çevrimiçi işlemlerinizin güvenli olduğundan emin olun: 10 önemli ipucu!</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <p class="ub-latest-posts__no-posts" aria-live="polite">Bu kategori için yazı bulunamadı.</p>
+            </div>
+        </section>
+        <!-- Latest posts section end here -->
+
+        <!-- Faq start here -->
+        <section id="ub-faq" class="ub-faq" data-aos="fade-up" data-aos-delay="100">
+            <div class="ub-faq__container container">
+                <div class="ub-faq__grid" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Section Heading -->
+                    <div class="ub-faq__heading" data-aos="fade-up" data-aos-delay="300">
+                        <div class="ub-faq__subtitle-area" data-aos="fade-up" data-aos-delay="400">
+                            <div class="ub-faq__subtitle-group">
+                                <i data-lucide="badge-question-mark" class="my-class"></i>
+                                <span class="ub-faq__subtitle">Sık Sorulan Sorular</span>
+                            </div>
+                        </div>
+                        <h2 class="ub-faq__title" data-aos="fade-up" data-aos-delay="500">Merak Ettikleriniz</h2>
+                    </div>
+                    <!-- FAQ Area -->
+                    <div class="ub-faq__list" data-aos="fade-up" data-aos-delay="600">
+                        <!-- FAQ Item -->
+                        <div class="ub-faq__item active" data-aos="fade-up" data-aos-delay="700">
+                            <button class="ub-faq__question active">
+                                <span class="ub-faq__question-text">Bri.com.tr nasıl çalışır?</span>
+                            </button>
+                            <div class="ub-faq__answer active">
+                                <p>Stok tutmadan satış yapmanızı sağlayan dropshipping modeliyle çalışıyoruz. Ürünleri biz depolarız, siz satarsınız.</p>
+                            </div>
+                        </div>
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="800">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">XML entegrasyonu nedir?</span>
+                            </button>
+                            <div class="ub-faq__answer">
+                                <p>Binlerce ürünü otomatik olarak sitenize aktarmanızı sağlayan sistemdir. Fiyat ve stok güncellemeleri anlık yapılır.</p>
+                            </div>
+                        </div>
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="900">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">Kargo işlemleri nasıl yapılıyor?</span>
+                            </button>
+                            <div class="ub-faq__answer">
+                                <p>Tüm kargo işlemlerini biz hallederiz. Siparişler otomatik olarak kargoya verilir ve müşterinize ulaştırılır.</p>
+                            </div>
+                        </div>
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="1000">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">Hangi platformlarla entegrasyon sağlıyorsunuz?</span>
+                            </button>
+                            <div class="ub-faq__answer">
+                                <p>Trendyol, Hepsiburada, N11, Çiçeksepeti ve daha birçok popüler e-ticaret platformu ile entegrasyon sağlıyoruz.</p>
+                            </div>
+                        </div>
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="1200">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">Destek hizmeti nasıl?</span>
+                            </button>
+                            <div class="ub-faq__answer">
+                                <p>7/24 canlı destek hizmeti sunuyoruz. Telefon, e-posta ve canlı chat ile her zaman ulaşabilirsiniz.</p>
+                            </div>
+                        </div>
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="1300">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">Ödeme nasıl yapılıyor?</span>
+                            </button>
+                            <div class="ub-faq__answer">
+                                <p>Kredi kartı, havale/EFT ve diğer güvenli ödeme yöntemleriyle kolayca ödeme yapabilirsiniz.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!-- Faq end here -->
+
+        <!-- Cta start here -->
+        <section id="ub-cta" class="ub-cta">
+            <div class="ub-cta__container container">
+                <div class="ub-cta__area" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="ub-cta__title" data-aos="fade-up" data-aos-delay="100">Hemen Başlayın, İşinizi Büyütün!</h3>
+                    <p class="ub-cta__desc" data-aos="fade-up" data-aos-delay="300">Stoksuz satış modeliyle e-ticaret dünyasında yerinizi alın.</p>
+                    <div class="ub-cta__btn-group" data-aos="fade-up" data-aos-delay="400">
+                        <a class="ub-cta__btn" href="https://briportal.com/register">Hemen Kayıt Ol</a>
+                    </div>
+                    <div class="ub-cta__background-up"></div>  
+                    <div class="ub-cta__background-up"></div>  
+                </div>
+            </div>
+        </section>
+        <!-- Cta end here -->
+
+ 
+    </main>
+
+        <!-- footer start here -->
+        <footer id="footer" class="footer"> 
+            <div class="footer__container container">
+                <div class="footer__content">
+                    <!-- Newsletter Section -->
+                    <div class="footer__newsletter">
+                        <div class="footer__newsletter-heading">
+                            <h3 class="footer__newsletter-title">Bültenimize Katılın</h3>
+                            <p class="footer__newsletter-desc">E-ticaret dünyasından haberler ve özel fırsatlar için abone olun.</p>
+                        </div>
+                        <div class="footer__form-wrapper">
+                            <form action="#" class="footer__newsletter-form">
+                                <div class="footer__input-wrapper">
+                                    <input type="email" class="footer__input" placeholder="E-posta adresiniz">
+                                    <input class="btn footer__submit-btn" type="submit" value="Abone Ol">
+                                </div>
+                                <p id="footer__form-message" class="footer__form-message success-message"></p>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="footer__content-wrapper">
+                        <!-- Logo Section Wrapper -->
+                        <div class="footer__logo-wrapper">
+                            <div class="footer__logo-inner-wrapper">
+                                <a href="index.html" class="footer__logo-link">
+                                    <img src="./assets/img/logo/logo.svg" alt="Logo" class="footer__logo-img">
+                                </a>
+                                <p class="footer__desc">Bri.com.tr stok tutmadan satış yapmak isteyen işletmeler için dropshipping, lojistik ve XML entegrasyon çözümleri sunar.</p>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Section Wrapper -->
+                        <div class="footer__navigation-wrapper">
+                            <div class="footer__navigation-column">
+                                <h3 class="footer__navigation-title">Sayfalar</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="./about.html" class="footer__link">Hakkımızda</a></li>
+                                    <li class="footer__link-item"><a href="./pricing.html" class="footer__link">Fiyatlarımız</a></li>
+                                    <li class="footer__link-item"><a href="./blog.html" class="footer__link">Blog</a></li>
+                                    <li class="footer__link-item"><a href="./contact.html" class="footer__link">İletişim</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__navigation-column">
+                                <h3 class="footer__navigation-title">Şirket</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="./about.html" class="footer__link">Hakkımızda</a></li>
+                                    <li class="footer__link-item"><a href="./blog.html" class="footer__link">Blog</a></li>
+                                     <li class="footer__link-item"><a href="./pricing.html" class="footer__link">Fiyatlarımız</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__navigation-column">
+                                <h3 class="footer__navigation-title">Linkler</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="https://briportal.com/" class="footer__link">Bri Portal</a></li>
+                                    <li class="footer__link-item"><a href="https://babynow.com.tr/" class="footer__link">Babynow Shop</a></li>
+                                    <li class="footer__link-item"><a href="https://babynowtoptan.com.tr/" class="footer__link">Babynow Toptan</a></li>
+                                    <li class="footer__link-item"><a href="https://bri.com.tr" class="footer__link">Bri</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__navigation-column">
+                                <h3 class="footer__navigation-title">Diğer</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="#" class="footer__link">Lisanslar</a></li>
+                                    <li class="footer__link-item"><a href="privacy-policy.html" class="footer__link">Gizlilik Politikası</a></li>
+                                    <li class="footer__link-item"><a href="./terms-and-condition.html" class="footer__link">Hizmet Şartları</a></li>
+                                    <li class="footer__link-item"><a href="./404.html" class="footer__link">404</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Copyright Section -->
+                    <div class="footer__copyright">
+                        <div class="footer__copyright-text">
+                            <p>&copy;<span class="footer__company-name">bri.com.tr</span>. All rights reserved. 2025  
+                            <span class="footer__divider">|</span> Designed by <a href="https://www.telegram.com/@By_Azade" class="footer__link">ByAzade</a>  
+                        </div>
+                        
+                        <div class="footer__social-links">
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item">
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/LinkedIn.svg" alt="LinkedIn Icon" class="footer__social-icon">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/X.svg" alt="Twitter Icon" class="footer__social-icon">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a href="https://www.instagram.com/bri.com.tr" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/instagram.svg" alt="Instagram Icon" class="footer__social-icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end here --> 
+
+ 
+    <!-- js  -->
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- SweetAlert2 js  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Swiper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Main js -->
+    <script src="./assets/js/srcipts.js"></script>
+    <!-- Form js -->
+    <script src="./assets/js/form.js"></script>    
+    <!-- Blog Loader js -->
+    <script src="./assets/js/blog-loader.js"></script>    
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

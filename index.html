@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bri.com.tr - Stok yok, Risk yok, Kazanç çok.</title>
+  
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/features-fix.css">
+    <link rel="stylesheet" href="./css/overflow-fix.css">
+    <link rel="icon" type="image/png" href="./assets/img/fav/fav.jpg">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+    
+    <!-- SweetAlert2 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/lucide@latest/dist/umd/lucide.js">
+   
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Temporary overrides for new mobile menu look (can be merged into main.css after SCSS compile) -->
+    <link rel="stylesheet" href="./css/_overrides-mobile-menu.css">
+    
+    <style>
+    .my-class {
+    color: #193470;
+    }
+    </style>
+
+</head>
+<body>
+
+    <!-- Header start here -->
+    <header id="ub-header" class="ub-header">
+        <div class="ub-header__container container">
+          <nav class="ub-header__navigation">
+            <div class="ub-header__branding">
+             <a href="index.html" class="header__logo">
+                <img src="./assets/img/logo/logo.svg" alt="Website Logo" class="ub-mobile-nav__logo">
+              </a>
+            </div>
+            <div class="ub-header__menu">
+              <ul class="menu">
+                <li class="menu__item"><a href="index.html" class="menu__link">Ana Sayfa</a></li>
+                <li class="menu__item"><a href="about.html" class="menu__link">Hakkımızda</a></li>
+                <li class="menu__item"><a href="pricing.html" class="menu__link">Fiyatlar</a></li>
+                <!--
+                <li class="menu__item menu__item--has-dropdown">
+                  <a href="#" class="menu__link" aria-haspopup="true" aria-expanded="false">All Pages</a>
+                  <ul class="menu__submenu">
+                    <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                    <li class="menu__item"><a href="blog-single.html" class="menu__link">Blog Details</a></li>
+                    <li class="menu__item"><a href="careers.html" class="menu__link">Careers</a></li>
+                    <li class="menu__item"><a href="careers-details.html" class="menu__link">Careers Details</a></li>
+                    <li class="menu__item"><a href="feature-single.html" class="menu__link">Features Details</a></li>
+                    <li class="menu__item"><a href="integrations.html" class="menu__link">Integrations</a></li>
+                    <li class="menu__item"><a href="integrations-details.html" class="menu__link">Integrations Details</a></li>
+                    <li class="menu__item"><a href="pricing.html" class="menu__link">Pricing</a></li>
+                    <li class="menu__item"><a href="https://briportal.com/register" class="menu__link">Pricing Details</a></li>
+                    <li class="menu__item"><a href="team-details.html" class="menu__link">Team Details</a></li>
+                    <li class="menu__item"><a href="privacy-policy.html" class="menu__link">Privacy & Policy</a></li>
+                    <li class="menu__item"><a href="licenses.html" class="menu__link">Licenses</a></li>
+                    <li class="menu__item"><a href="404.html" class="menu__link">404</a></li>
+                    <li class="menu__item"><a href="terms-and-condition.html" class="menu__link">Terms & Condition</a></li>
+                  </ul>
+                </li>-->
+                <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li> 
+                <li class="menu__item"><a href="contact.html" class="menu__link">İletişim</a></li> 
+              </ul>
+            </div>
+            <div class="ub-header__actions">
+              <a href="https://briportal.com/login" class="header__button header__button--login">Giriş</a>
+              <a href="https://briportal.com/register" class="ub-header__button header__button--get-started">Üye Ol</a>
+              <button class="ub-header__menu-toggle" aria-label="Toggle Menu">☰</button>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <!-- Header end here -->
+      
+    <!-- Mobile start navigation -->
+    <div id="ub-mobile-nav" class="ub-mobile-nav">
+        <div class="ub-mobile-nav__header">
+            <div class="ub-mobile-nav__branding">
+                <a href="index.html">
+                    <img src="./assets/img/logo/logo.svg" alt="Mobile Logo" class="ub-mobile-nav__logo">
+                </a>
+            </div>
+            <button class="ub-mobile-nav__close-btn" aria-label="Close Menu">×</button>
+        </div>
+        <ul class="ub-mobile-nav__menu">
+            <li class="ub-mobile-nav__item"><a href="index.html" class="ub-mobile-nav__link">Ana Sayfa</a></li>
+            <li class="ub-mobile-nav__item"><a href="./about.html" class="ub-mobile-nav__link">Hakkımızda</a></li>
+            <li class="ub-mobile-nav__item"><a href="pricing.html" class="ub-mobile-nav__link">Fiyatlar</a></li>
+            <li class="ub-mobile-nav__item"><a href="blog.html" class="ub-mobile-nav__link">Blog</a></li>
+            <li class="ub-mobile-nav__item"><a href="contact.html" class="ub-mobile-nav__link">İletişim</a></li>
+        </ul>
+        <div class="ub-mobile-nav__actions">
+            <a href="https://briportal.com/login" class="ub-mobile-nav__button ub-mobile-nav__button--login">Giriş</a>
+            <a href="https://briportal.com/register" class="ub-mobile-nav__button ub-mobile-nav__button--get-started">Üye Ol</a>
+        </div>
+    </div>
+    <!-- Mobile end navigation -->
+
+ 
+    <main>
+        <!-- Hero start here -->
+        <section id="ub-hero-home" class="ub-hero-home">
+            <div class="ub-hero-home__container container">
+                <div class="ub-hero-home__content-area" data-aos="fade-up" data-aos-delay="100">
+                    <div class="ub-hero-home__content" data-bg-img="./assets/img/hero/heroBg.png">
+                        <div class="ub-hero-home__subtitle-area">
+                            <div class="ub-hero-home__subtitle-group" data-aos="fade-up" data-aos-delay="200">
+                                <i data-lucide="star" class="my-class"></i>
+                                <span class="ub-hero-home__subtitle">Stoksuz Satışta Yeni Bir Dönem</span>
+                            </div>
+                        </div>
+                        <h1 class="ub-hero-home__title" data-aos="fade-up" data-aos-delay="300" style="color: white;">
+                        Stok Tutmadan Satış Yapın, İşinizi Büyütün
+                        </h1>
+                        <p class="ub-hero-home__desc" data-aos="fade-up" data-aos-delay="400" style="color: lightgrey;">Bri.com.tr ile dropshipping, XML entegrasyonu ve lojistik desteği alarak e-ticaret operasyonlarınızı kolaylaştırın.</p>
+                        <div class="ub-hero-home__button-group">
+                            <a href="https://briportal.com/register" class="ub-hero-home__button ub-hero-home__button--primary" data-aos="fade-up" data-aos-delay="500">Üye Ol</a>
+                            <a href="#ub-how-it-works" class="ub-hero-home__button ub-hero-home__button--secondary" data-aos="fade-up" data-aos-delay="600">Keşfet</a>
+                        </div>
+                    </div> 
+                </div>
+                <!-- Background Image -->
+                <div class="ub-hero-home__image-wrapper" data-aos="fade-up" data-aos-delay="700">
+                    <img class="ub-hero-home__img" src="./assets/img/hero/application-shell.png" alt="Application Shell">
+                </div>
+            </div>
+        </section>        
+        <!-- Hero end here -->
+
+        <!-- Brands section start -->
+        <section id="ub-brands" class="ub-brands">
+            <div class="ub-brands__container container">
+                <div class="ub-brands__content">
+                    <!-- Section Heading -->
+                    <div class="ub-brands__header">
+                        <h2 class="ub-brands__title" data-aos="fade-up">Entegrasyonlar</h2>
+                    </div>
+                    <!-- Brand Logos Slider -->
+                    <div class="ub-brands__slider-area swiper-container">
+                        <div class="ub-brands__slider-wrapper swiper-wrapper">
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/integrations/hepsiburada.svg" alt="babynow Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/integrations/trendyol.svg" alt="babynowtoptan Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/integrations/amazon.svg" alt="babynow Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/integrations/shopify.svg" alt="babynowtoptan Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/integrations/etsy.svg" alt="babynow Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/integrations/paraşüt.svg" alt="babynowtoptan Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/babynow.svg" alt="babynowtoptan Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/babynowtoptan.svg" alt="babynow Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/integrations/hepsiburada.svg" alt="babynowtoptan Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/integrations/trendyol.svg" alt="babynow Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/integrations/amazon.svg" alt="babynowtoptan Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/integrations/shopify.svg" alt="babynow Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/integrations/etsy.svg" alt="babynowtoptan Logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Brands section end -->
+ <!-- Integrations start here -->
+        <section id="ub-integrations" class="ub-integrations" data-aos="fade-up" data-aos-delay="100">
+            <div class="ub-integrations__container container">
+                <!-- Left Side: Header -->
+                <div class="ub-integrations__header">
+                    <div class="ub-integrations__subtitle-area" data-aos="fade-up" data-aos-delay="200">
+                        <div class="ub-integrations__subtitle-group">
+                             <i data-lucide="badge-plus" class="my-class"></i>
+                            <span class="ub-integrations__subtitle">Bri.com.tr ile</span>
+                        </div>
+                    </div>
+                    <h2 class="ub-integrations__title" data-aos="fade-up" data-aos-delay="300">Dropshipping Çözümleri</h2>
+                    <p class="ub-integrations__desc" data-aos="fade-up" data-aos-delay="400">Binlerce ürünü stok tutmadan satış yapın. Ürünleri siz satarsınız, biz gönderelim.</p>
+                </div>
+
+                <!-- Right Side: Logo Container with 3 Rows -->
+                <div class="ub-integrations__logos" data-aos="fade-up" data-aos-delay="500">
+                    <!-- Row 1 - Slide Left -->
+                    <div class="ub-integrations__slider-left">
+                        <div class="ub-integrations__slider-wrapper">
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image1.png" alt="Hepsiburada" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image2.png" alt="Trendyol" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image3.png" alt="Amazon" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image4.png" alt="Shopify" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image5.png" alt="Etsy" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image6.png" alt="Paraşüt" class="ub-integrations__logo">
+                            </div>
+                            <!-- Duplicate for seamless loop -->
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image7.png" alt="Hepsiburada" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image8.png" alt="Trendyol" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image9.png" alt="Amazon" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image10.png" alt="Shopify" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image11.png" alt="Etsy" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image12.png" alt="Paraşüt" class="ub-integrations__logo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 - Slide Right -->
+                    <div class="ub-integrations__slider-right">
+                        <div class="ub-integrations__slider-wrapper">
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image13.png" alt="Tryoto" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image1.png" alt="Shopify" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image12.png" alt="Amazon" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image14.png" alt="Etsy" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image13.png" alt="Hepsiburada" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image15.png" alt="Trendyol" class="ub-integrations__logo">
+                            </div>
+                            <!-- Duplicate for seamless loop -->
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image2.png" alt="Tryoto" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image3.png" alt="Shopify" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image4.png" alt="Amazon" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image6.png" alt="Etsy" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image13.png" alt="Hepsiburada" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image15.png" alt="Trendyol" class="ub-integrations__logo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3 - Slide Left -->
+                    <div class="ub-integrations__slider-left">
+                        <div class="ub-integrations__slider-wrapper">
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image5.png" alt="Paraşüt" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image13.png" alt="Hepsiburada" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image2.png" alt="Tryoto" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image4.png" alt="Trendyol" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image7.png" alt="Amazon" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image8.png" alt="Etsy" class="ub-integrations__logo">
+                            </div>
+                            <!-- Duplicate for seamless loop -->
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image9.png" alt="Paraşüt" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image10.png" alt="Hepsiburada" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image11.png" alt="Tryoto" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image12.png" alt="Trendyol" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image13.png" alt="Amazon" class="ub-integrations__logo">
+                            </div>
+                            <div class="ub-integrations__slider-item">
+                                <img src="./assets/img/integrations/image2.png" alt="Etsy" class="ub-integrations__logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Integrations end here -->
+        <!-- How it works start here -->
+        <section id="ub-how-it-works" class="ub-how-it-works" data-aos="fade-up" data-aos-delay="100"> 
+            <div class="ub-how-it-works__container container">
+                <div class="ub-how-it-works__content-area">
+                    <div class="ub-how-it-works__header" data-aos="fade-up">
+                        <div class="ub-how-it-works__subtitle-area" data-aos="fade-up" data-aos-delay="200">
+                            <div class="ub-how-it-works__subtitle-group">
+                                <i data-lucide="badge-check" class="my-class"></i>
+                                <span class="ub-how-it-works__subtitle">İşinizi kolaylaştırır</span>
+                            </div>
+                        </div>
+                        <h2 class="ub-how-it-works__title" data-aos="fade-up" data-aos-delay="300">Nasıl Çalışır</h2>
+                        <p class="ub-how-it-works__desc" data-aos="fade-up" data-aos-delay="400">Stoksuz satış modeliyle işletmenizi büyütmek için gereken tüm araçları sunuyoruz.</p>
+                    </div>
+                    <div class="ub-how-it-works__content">
+                        <div class="ub-how-it-works__step" data-aos="fade-up" data-aos-delay="500"> 
+                            <div class="ub-how-it-works__step-icon">
+                                <i data-lucide="user-plus" class="my-class"></i>
+                            </div>
+                            <h3 class="ub-how-it-works__step-title">Kayıt Olun</h3>
+                            <p class="ub-how-it-works__step-description">Hızlıca hesap oluşturun ve sisteme entegre olun.</p>
+                        </div>
+                        <div class="ub-how-it-works__step" data-aos="fade-up" data-aos-delay="600">
+                            <div class="ub-how-it-works__step-icon">
+                                <i data-lucide="shopping-cart" class="my-class"></i>
+                            </div>
+                            <h3 class="ub-how-it-works__step-title">Ürünleri Ekleyin</h3>
+                            <p class="ub-how-it-works__step-description">XML entegrasyonu ile binlerce ürünü sitenize aktarın.</p>
+                        </div>
+                        <div class="ub-how-it-works__step" data-aos="fade-up" data-aos-delay="700">
+                            <div class="ub-how-it-works__step-icon">
+                                <i data-lucide="store" class="my-class"></i>
+                            </div>
+                            <h3 class="ub-how-it-works__step-title">Satış Yapın</h3>
+                            <p class="ub-how-it-works__step-description">Stok tutmadan satış yapın, biz gönderelim.</p>
+                        </div>
+                        <div class="ub-how-it-works__step" data-aos="fade-up" data-aos-delay="800">
+                            <div class="ub-how-it-works__step-icon">
+                                <i data-lucide="clock-7" class="my-class"></i>
+                            </div>
+                            <h3 class="ub-how-it-works__step-title">7/24 Destek</h3>
+                            <p class="ub-how-it-works__step-description">Her zaman yanınızdayız, sorularınızı yanıtlıyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How it works end here -->
+
+        <!-- Features start here -->
+        <section id="ub-features" class="ub-features" data-aos="fade-up" data-aos-delay="100">
+            <div class="ub-features_container container">
+                <div class="ub-features__header" data-aos="fade-up">
+                    <div class="ub-features__subtitle-area" data-aos="fade-up" data-aos-delay="200">
+                        <div class="ub-features__subtitle-group">
+                            <i data-lucide="badge-info" class="my-class"></i>
+                            <span class="ub-features__subtitle">Özelliklerimiz</span>
+                        </div>
+                    </div>
+                    <h2 class="ub-features__title" data-aos="fade-up" data-aos-delay="300">E-Ticareti Kolaylaştırın</h2>
+                    <p class="ub-features__desc" data-aos="fade-up" data-aos-delay="400">Dropshipping ile işinizi büyütün.</p>
+                </div>
+        
+                <!-- features area -->
+                <div class="ub-features__area">
+                    <!-- Card 1 -->
+                    <div class="ub-features__card" data-aos="fade-up" data-aos-delay="500">
+                        <div>
+                            <img src="./assets/img/hero/1.png" alt="Dropshipping Çözümleri" class="ub-features__image">
+                        </div>
+                        <div class="ub-features__content">
+                            <h3 class="ub-features__item-title">💰 Bugün Ne Kadar Kâr Ettim?</h3>
+                            <p class="ub-features__item-desc">Artık kazancını hesaplamakla uğraşma!</br> bri.com.tr tüm pazar yerlerindeki satışlarını otomatik olarak toplar. Komisyon oranlarını, kargo ücretini ve ürün maliyetini hesaba katarak günlük net kârını anında gösterir.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="ub-features__card" data-aos="fade-up" data-aos-delay="600">
+                        <div>
+                            <img src="./assets/img/hero/2.png" alt="XML Entegrasyonu" class="ub-features__image">
+                        </div>
+                        <div class="ub-features__content">
+                            <h3 class="ub-features__item-title">🤖 BRI AI Asistan</h3>
+                            <p class="ub-features__item-desc">Artık satış süreçlerinde yalnız değilsin!</br>
+BRI AI Asistan, tüm sipariş ve ürün verilerini analiz eder; ürün adını ve görselini geliştirmek için sana akıllı öneriler sunar. Reklam bütçeni optimize eder, düşük kâr oranlarını tespit eder ve satışlarını artırmak için en uygun adımları belirler.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="ub-features__card" data-aos="fade-up" data-aos-delay="700">
+                        <div>
+                            <img src="./assets/img/hero/3.png" alt="Lojistik Desteği" class="ub-features__image">
+                        </div>
+                        <div class="ub-features__content">
+                            <h3 class="ub-features__item-title">🛍️ Ürünleri Yayınla</h3>
+                            <p class="ub-features__item-desc">Ürünlerini tek tek yüklemeye son!</br>bri.com.tr ile tüm ürünlerini tek panelden Trendyol, Hepsiburada, Amazon, Pazarama, Shopify, İkas ve n11 mağazalarına kolayca aktarabilirsin. Stok, fiyat ve görseller otomatik güncellenir; tüm pazar yerleri senin yerine senkronize edilir.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="ub-features__card" data-aos="fade-up" data-aos-delay="800">
+                        <div>
+                            <img src="./assets/img/hero/4.png" alt="Kolay Yönetim Paneli" class="ub-features__image">
+                        </div>
+                        <div class="ub-features__content">
+                            <h3 class="ub-features__item-title">🚚 Kargo Anlaşmasına Gerek Yok</h3>
+                            <p class="ub-features__item-desc">Kargo sözleşmeleriyle uğraşmana gerek kalmadı!</br>
+bri.com.tr, senin yerine 400’den fazla kargo firmasıyla entegre çalışır ve gönderilerini 59,99 TL’den başlayan fiyatlarla yapar. HepsiJet, MNG, Aras, Yurtiçi ve daha yüzlerce seçeneğiyle siparişlerin hızlı, güvenli ve ekonomik şekilde müşterine ulaşır.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="ub-features__card" data-aos="fade-up" data-aos-delay="900">
+                        <div>
+                            <img src="./assets/img/hero/5.png" alt="Gelişmiş Analitik" class="ub-features__image">
+                        </div>
+                        <div class="ub-features__content">
+                            <h3 class="ub-features__item-title">💸 Ürün Fiyatını Kendin Belirle</h3>
+                            <p class="ub-features__item-desc">bri.com.tr araçlar kısmında, istediğin ürünün hangi fiyattan satışa girebileceğini kolayca belirleyebilirsin. Sistem, maliyetini ve pazar yeri komisyon oranlarını otomatik analiz eder; sana en uygun satış fiyatı aralığını önerir.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="ub-features__card" data-aos="fade-up" data-aos-delay="1000">
+                        <div>
+                            <img src="./assets/img/hero/6.png" alt="7/24 Destek" class="ub-features__image">
+                        </div>
+                        <div class="ub-features__content">
+                            <h3 class="ub-features__item-title">💡 Tavsiye Edilen Satış Fiyatı</h3>
+                            <p class="ub-features__item-desc">bri.com.tr, ürün maliyetini, pazar yeri komisyonlarını ve diğer satıcıların fiyatlarını analiz ederek her ürün için Tavsiye Edilen Satış Fiyatı (TES) oluşturur.
+Sistem, sana en kârlı ve rekabetçi fiyat aralığında satış yapman için akıllı öneriler sunar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Features end here -->
+
+        <!-- Sliding Cards section start -->
+        <section id="ub-sliding-cards" class="ub-sliding-cards" data-aos="fade-up" data-aos-delay="100">
+            <div class="ub-sliding-cards__container container">
+                <div class="ub-sliding-cards__header" data-aos="fade-up">
+                    <div class="ub-sliding-cards__subtitle-area" data-aos="fade-up" data-aos-delay="200">
+                        <div class="ub-sliding-cards__subtitle-group">
+                            <i data-lucide="images" class="my-class"></i>
+                            <span class="ub-sliding-cards__subtitle">Çözümlerimiz</span>
+                        </div>
+                    </div>
+                    <h2 class="ub-features__title" data-aos="fade-up" data-aos-delay="300">İşinizi Büyütecek Çözümler</h2>
+                    <p class="ub-sliding-cards__desc" data-aos="fade-up" data-aos-delay="400">Modern e-ticaret dünyasının ihtiyaçlarına yönelik kapsamlı çözümlerimizi keşfedin.</p>
+                </div>
+
+                <div class="ub-sliding-cards__wrapper" data-aos="fade-up" data-aos-delay="500">
+                    <div class="ub-sliding-cards__track">
+                        <!-- Original cards -->
+                        <div class="ub-sliding-cards__card">
+                            <div class="ub-sliding-cards__image">
+                                <img src="./assets/img/features/feature-1.png" alt="Dropshipping Çözümleri">
+                            </div>
+                            <div class="ub-sliding-cards__content">
+                                <h3 class="ub-sliding-cards__card-title">Dropshipping Çözümleri</h3>
+                                <p class="ub-sliding-cards__card-desc">Stok tutmadan satış yapın, riski sıfırlayın. Ürünleri biz yönetelim, siz büyümeye odaklanın.</p>
+                            </div>
+                        </div>
+
+                        <div class="ub-sliding-cards__card">
+                            <div class="ub-sliding-cards__image">
+                                <img src="./assets/img/features/feature-2.png" alt="XML Entegrasyonu">
+                            </div>
+                            <div class="ub-sliding-cards__content">
+                                <h3 class="ub-sliding-cards__card-title">XML Entegrasyonu</h3>
+                                <p class="ub-sliding-cards__card-desc">Binlerce ürünü anında aktarın. Fiyat ve stok güncellemeleri otomatik olarak senkronize edilir.</p>
+                            </div>
+                        </div>
+
+                        <div class="ub-sliding-cards__card">
+                            <div class="ub-sliding-cards__image">
+                                <img src="./assets/img/features/feature-3.png" alt="Lojistik Yönetimi">
+                            </div>
+                            <div class="ub-sliding-cards__content">
+                                <h3 class="ub-sliding-cards__card-title">Lojistik Yönetimi</h3>
+                                <p class="ub-sliding-cards__card-desc">Hızlı ve güvenilir kargo hizmeti. Müşterilerinize zamanında teslimat garantisi sunuyoruz.</p>
+                            </div>
+                        </div>
+
+                        <div class="ub-sliding-cards__card">
+                            <div class="ub-sliding-cards__image">
+                                <img src="./assets/img/features/feature-4.png" alt="Akıllı Analitik">
+                            </div>
+                            <div class="ub-sliding-cards__content">
+                                <h3 class="ub-sliding-cards__card-title">Akıllı Analitik</h3>
+                                <p class="ub-sliding-cards__card-desc">Satış performansınızı gerçek zamanlı takip edin. Veri odaklı kararlar alın.</p>
+                            </div>
+                        </div>
+
+                        <div class="ub-sliding-cards__card">
+                            <div class="ub-sliding-cards__image">
+                                <img src="./assets/img/hero/application-shell.png" alt="Mobil Uygulama">
+                            </div>
+                            <div class="ub-sliding-cards__content">
+                                <h3 class="ub-sliding-cards__card-title">Mobil Uygulama</h3>
+                                <p class="ub-sliding-cards__card-desc">Her yerden işinizi yönetin. iOS ve Android uyumlu mobil uygulamamızla her zaman kontrolde olun.</p>
+                            </div>
+                        </div>
+
+                        <div class="ub-sliding-cards__card">
+                            <div class="ub-sliding-cards__image">
+                                <img src="./assets/img/features/feature-1.png" alt="7/24 Destek">
+                            </div>
+                            <div class="ub-sliding-cards__content">
+                                <h3 class="ub-sliding-cards__card-title">7/24 Destek</h3>
+                                <p class="ub-sliding-cards__card-desc">Uzman ekibimiz her zaman yanınızda. Canlı destek, telefon ve e-posta ile kesintisiz hizmet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sliding Cards section end -->
+
+        <!-- Testimonial start here -->
+        <section id="ub-testimonial" class="ub-testimonial" data-aos="fade-up" data-aos-delay="100">
+            <div class="ub-testimonial__container container">
+                <div class="ub-testimonial__header" data-aos="fade-up">
+                    <div class="ub-testimonial__subtitle-area" data-aos="fade-up" data-aos-delay="200">
+                        <div class="ub-testimonial__subtitle-group">
+                            <i data-lucide="badge" class="my-class"></i>
+                            <span class="ub-testimonial__subtitle">Müşteri Yorumları</span>
+                        </div>
+                    </div>
+                    <h2 class="ub-testimonial__title" data-aos="fade-up" data-aos-delay="300">Müşterilerimiz Ne Diyor</h2>
+                    <p class="ub-testimonial__desc" data-aos="fade-up" data-aos-delay="400">Bri.com.tr ile işlerini büyüten müşterilerimizin deneyimlerini okuyun.</p>
+                </div>
+        
+                <div class="ub-testimonial__content">
+                    <!-- testimonial Item 1 -->
+                    <div class="ub-testimonial__item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="ub-testimonial__rating star-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="ub-testimonial__text">
+                            <p>"Bri.com.tr sayesinde stok tutmadan satış yapıyorum. Lojistik ve entegrasyon desteği harika!"</p>
+                        </div>
+                        <div class="ub-testimonial__profile">
+                            <div class="ub-testimonial__avatar">
+                                <img src="./assets/img/testimonials/testimonial-1.png" alt="Justin Bayboro" class="ub-testimonial__image">
+                            </div>
+                            <div class="ub-testimonial__info">
+                                <h3 class="ub-testimonial__name">Justin Bayboro</h3>
+                                <p class="ub-testimonial__position">Position at Acme Innovations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- testimonial Item 2 -->
+                    <div class="ub-testimonial__item" data-aos="fade-up" data-aos-delay="600">
+                        <div class="ub-testimonial__rating star-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="ub-testimonial__text">
+                            <p>"XML entegrasyonu çok kolay. Binlerce ürünü dakikalar içinde sitemize aktardık."</p>
+                        </div>
+                        <div class="ub-testimonial__profile">
+                            <div class="ub-testimonial__avatar">
+                                <img src="./assets/img/testimonials/testimonial-2.png" alt="Abraham Linking" class="ub-testimonial__image">
+                            </div>
+                            <div class="ub-testimonial__info">
+                                <h3 class="ub-testimonial__name">Abraham Linking</h3>
+                                <p class="ub-testimonial__position">Senior Developer at Tech Solutions Co.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- testimonial Item 3 -->
+                    <div class="ub-testimonial__item" data-aos="fade-up" data-aos-delay="700">
+                        <div class="ub-testimonial__rating star-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="ub-testimonial__text">
+                            <p>"Müşteri desteği çok hızlı ve çözüm odaklı. İşimizi büyütmemize yardımcı oldular."</p>
+                        </div>
+                        <div class="ub-testimonial__profile">
+                            <div class="ub-testimonial__avatar">
+                                <img src="./assets/img/testimonials/testimonial-3.png" alt="Muhammad Abir" class="ub-testimonial__image">
+                            </div>
+                            <div class="ub-testimonial__info">
+                                <h3 class="ub-testimonial__name">Muhammad Abir</h3>
+                                <p class="ub-testimonial__position">Product Manager at Global Enterprises</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial end here -->
+
+       
+
+        <!-- Pricing section start -->
+        <section id="ub-pricing" class="ub-pricing" data-aos="fade-up" data-aos-delay="100">
+            <div class="ub-pricing__container container">
+                <div class="ub-pricing__header" data-aos="fade-up">
+                <div class="ub-pricing__subtitle-area" data-aos="fade-up" data-aos-delay="200">
+                    <div class="ub-pricing__subtitle-group">
+                    <i data-lucide="badge-turkish-lira" class="my-class"></i>
+                    <span class="ub-pricing__subtitle">Fiyatlandırma</span>
+                    </div>
+                </div>
+                <h2 class="ub-pricing__title" data-aos="fade-up" data-aos-delay="300">Her Bütçeye Uygun Paketler</h2>
+                <p class="ub-pricing__desc" data-aos="fade-up" data-aos-delay="400">Küçük işletmelerden büyük şirketlere kadar <br>herkes için uygun fiyatlı çözümler!</p>
+                </div>
+          
+                <!-- Pricing switcher -->
+                <div class="ub-pricing__switcher" data-aos="fade-up" data-aos-delay="500">
+                    <div class="ub-pricing__switcher-wrapper">
+                    <button class="ub-pricing__switcher-btn ub-pricing__switcher-btn--active" data-target="monthly">Aylık</button>
+                    <button class="ub-pricing__switcher-btn" data-target="annual">Yıllık (%10 İndirim)</button>
+                    </div>
+                </div> 
+            
+                <!-- Monthly Cards -->
+                <div class="ub-pricing__cards pricing__cards--monthly" data-target="monthly">
+                    <div class="ub-pricing__card" data-aos="fade-up" data-aos-delay="600">
+                        <h3 class="ub-pricing__plan-title">Başlangıç Paketi</h3>
+                        <p class="ub-pricing__plan-description">Yeni başlayanlar için ideal. Temel özelliklerle işe başlayın.</p>
+                        <div class="ub-pricing__price-wrapper">
+                            <span class="ub-pricing__price">₺699.00 TL</span>
+                        </div>
+                        <ul class="ub-pricing__features-list">
+                            <li><i class="fa-solid fa-check"></i> Sınırsız Ürün Listesi</li>
+                            <li><i class="fa-solid fa-check"></i> Temel Stok Yönetimi</li>
+                            <li><i class="fa-solid fa-check"></i> Aylık 500 İşlem</li>
+                            <li><i class="fa-solid fa-check"></i> Email Destek</li>
+                        </ul>
+                        <a class="ub-pricing__button" href="https://briportal.com/register">Hemen Üye Ol</a>
+                    </div>
+                    <div class="ub-pricing__card" data-aos="fade-up" data-aos-delay="700">
+                        <h3 class="ub-pricing__plan-title">Standart Paket</h3>
+                        <p class="ub-pricing__plan-description">Büyüyen işletmeler için. Gelişmiş özelliklerle daha fazlası.</p>
+                        <div class="ub-pricing__price-wrapper">
+                            <span class="ub-pricing__price">₺999.00 TL</span>
+                        </div>
+                        <ul class="ub-pricing__features-list">
+                            <li><i class="fa-solid fa-check"></i> 10+ Platform Entegrasyonu</li>
+                            <li><i class="fa-solid fa-check"></i> 5 Kullanıcı Hesabı</li>
+                            <li><i class="fa-solid fa-check"></i> Aylık 5000 İşlem</li>
+                            <li><i class="fa-solid fa-check"></i> Gelişmiş Analitikler</li>
+                        </ul>
+                        <a class="ub-pricing__button" href="https://briportal.com/register">Hemen Üye Ol</a>
+                    </div>
+                    <div class="ub-pricing__card" data-aos="fade-up" data-aos-delay="800">
+                        <h3 class="ub-pricing__plan-title">Enterprise Paket</h3>
+                        <p class="ub-pricing__plan-description">Büyük hacimli satışlar için. Sınırsız özellikler ve öncelikli destek.</p>
+                        <div class="ub-pricing__price-wrapper">
+                            <span class="ub-pricing__price">₺1,299.00 TL</span>
+                        </div>
+                        <ul class="ub-pricing__features-list">
+                            <li><i class="fa-solid fa-check"></i> Tüm Platform Entegrasyonları</li>
+                            <li><i class="fa-solid fa-check"></i> Sınırsız Kullanıcı Hesabı</li>
+                            <li><i class="fa-solid fa-check"></i> Sınırsız İşlem</li>
+                            <li><i class="fa-solid fa-check"></i> Öncelikli 24/7 Destek</li>
+                        </ul>
+                        <a class="ub-pricing__button" href="https://briportal.com/register">Hemen Üye Ol</a>
+                    </div>
+                </div>
+                
+                <!-- Annual Cards -->
+                <div class="ub-pricing__cards pricing__cards--annual ub-pricing__cards--hidden" data-target="annual">
+                    <div class="ub-pricing__card" data-aos="fade-up" data-aos-delay="900">
+                        <h3 class="ub-pricing__plan-title">Başlangıç Paketi</h3>
+                        <p class="ub-pricing__plan-description">Yeni başlayanlar için ideal. Temel özelliklerle işe başlayın.</p>
+                        <div class="ub-pricing__price-wrapper">
+                            <span class="ub-pricing__price">₺8,299.00 TL</span>
+                        </div>
+                        <ul class="ub-pricing__features-list">
+                            <li><i class="fa-solid fa-check"></i> Sınırsız Ürün Listesi</li>
+                            <li><i class="fa-solid fa-check"></i> Temel Stok Yönetimi</li>
+                            <li><i class="fa-solid fa-check"></i> Aylık 500 İşlem</li>
+                            <li><i class="fa-solid fa-check"></i> Email Destek</li>
+                        </ul>
+                        <a class="ub-pricing__button" href="https://briportal.com/register">Hemen Üye Ol</a>
+                    </div>
+                    <div class="ub-pricing__card" data-aos="fade-up" data-aos-delay="1000">
+                        <h3 class="ub-pricing__plan-title">Standart Paket</h3>
+                        <p class="ub-pricing__plan-description">Büyüyen işletmeler için. Gelişmiş özelliklerle daha fazlası.</p>
+                        <div class="ub-pricing__price-wrapper">
+                            <span class="ub-pricing__price">₺11,999.00 TL</span>
+                        </div>
+                        <ul class="ub-pricing__features-list">
+                            <li><i class="fa-solid fa-check"></i> 10+ Platform Entegrasyonu</li>
+                            <li><i class="fa-solid fa-check"></i> 5 Kullanıcı Hesabı</li>
+                            <li><i class="fa-solid fa-check"></i> Aylık 5000 İşlem</li>
+                            <li><i class="fa-solid fa-check"></i> Gelişmiş Analitikler</li>
+                        </ul>
+                        <a class="ub-pricing__button" href="https://briportal.com/register">Hemen Üye Ol</a>
+                    </div>
+                    <div class="ub-pricing__card" data-aos="fade-up" data-aos-delay="1100">
+                        <h3 class="ub-pricing__plan-title">Enterprise Paket</h3>
+                        <p class="ub-pricing__plan-description">Büyük hacimli satışlar için. Sınırsız özellikler ve öncelikli destek.</p>
+                        <div class="ub-pricing__price-wrapper">
+                            <span class="ub-pricing__price">₺15,499.00 TL</span>
+                        </div>
+                        <ul class="ub-pricing__features-list">
+                            <li><i class="fa-solid fa-check"></i> Tüm Platform Entegrasyonları</li>
+                            <li><i class="fa-solid fa-check"></i> Sınırsız Kullanıcı Hesabı</li>
+                            <li><i class="fa-solid fa-check"></i> Sınırsız İşlem</li>
+                            <li><i class="fa-solid fa-check"></i> Öncelikli 24/7 Destek</li>
+                        </ul>
+                        <a class="ub-pricing__button" href="https://briportal.com/register">Hemen Üye Ol</a>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <!-- Pricing section end -->
+
+        <!-- Blog section start here -->
+        <section id="ub-blog" class="ub-blog" data-aos="fade-up" data-aos-delay="100">
+            <div class="ub-blog__container container">
+                <div class="ub-blog__header" data-aos="fade-up">
+                    <div class="ub-blog__subtitle-area" data-aos="fade-up" data-aos-delay="200">
+                        <div class="ub-blog__subtitle-group">
+                            <i data-lucide="rss" class="my-class"></i>
+                            <span class="ub-blog__subtitle">Blog</span>
+                        </div>
+                    </div>
+                    <h2 class="ub-blog__title" data-aos="fade-up" data-aos-delay="300">E-Ticaret Dünyasından Haberler</h2>
+                    <p class="ub-blog__description" data-aos="fade-up" data-aos-delay="400">Dropshipping ve e-ticaret hakkında güncel bilgiler ve ipuçları.</p>
+                </div>
+        
+                <div class="ub-blog__cards" data-aos="fade-up" data-aos-delay="500">
+                    <!-- Blog yazıları buraya otomatik olarak yüklenecek -->
+                </div>
+        
+                <div class="ub-blog__btn-wrapper" data-aos="fade-up" data-aos-delay="900">
+                    <a href="blog.html" class="ub-blog__btn">Tüm Blog Yazıları</a>
+                </div>
+            </div>
+        </section>
+        <!-- Blog section end here -->
+
+        <!-- Faq start here -->
+        <section id="ub-faq" class="ub-faq" data-aos="fade-up" data-aos-delay="100">
+            <div class="ub-faq__container container">
+                <div class="ub-faq__grid" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Section Heading -->
+                    <div class="ub-faq__heading" data-aos="fade-up" data-aos-delay="300">
+                        <div class="ub-faq__subtitle-area" data-aos="fade-up" data-aos-delay="400">
+                            <div class="ub-faq__subtitle-group">
+                                <i data-lucide="badge-question-mark" class="my-class"></i>
+                                <span class="ub-faq__subtitle">Sık Sorulan Sorular</span>
+                            </div>
+                        </div>
+                        <h2 class="ub-faq__title" data-aos="fade-up" data-aos-delay="500">Merak Ettikleriniz</h2>
+                    </div>
+                    <!-- FAQ Area -->
+                    <div class="ub-faq__list" data-aos="fade-up" data-aos-delay="600">
+                        <!-- FAQ Item -->
+                        <div class="ub-faq__item active" data-aos="fade-up" data-aos-delay="700">
+                            <button class="ub-faq__question active">
+                                <span class="ub-faq__question-text">Bri.com.tr nasıl çalışır?</span>
+                            </button>
+                            <div class="ub-faq__answer active">
+                                <p>Stok tutmadan satış yapmanızı sağlayan dropshipping modeliyle çalışıyoruz. Ürünleri biz depolarız, siz satarsınız.</p>
+                            </div>
+                        </div>
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="800">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">XML entegrasyonu nedir?</span>
+                            </button>
+                            <div class="ub-faq__answer">
+                                <p>Binlerce ürünü otomatik olarak sitenize aktarmanızı sağlayan sistemdir. Fiyat ve stok güncellemeleri anlık yapılır.</p>
+                            </div>
+                        </div>
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="900">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">Kargo işlemleri nasıl yapılıyor?</span>
+                            </button>
+                            <div class="ub-faq__answer">
+                                <p>Tüm kargo işlemlerini biz hallederiz. Siparişler otomatik olarak kargoya verilir ve müşterinize ulaştırılır.</p>
+                            </div>
+                        </div>
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="1000">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">Hangi platformlarla entegrasyon sağlıyorsunuz?</span>
+                            </button>
+                            <div class="ub-faq__answer">
+                                <p>Trendyol, Hepsiburada, N11, Çiçeksepeti ve daha birçok popüler e-ticaret platformu ile entegrasyon sağlıyoruz.</p>
+                            </div>
+                        </div>
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="1200">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">Destek hizmeti nasıl?</span>
+                            </button>
+                            <div class="ub-faq__answer">
+                                <p>7/24 canlı destek hizmeti sunuyoruz. Telefon, e-posta ve canlı chat ile her zaman ulaşabilirsiniz.</p>
+                            </div>
+                        </div>
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="1300">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">Ödeme nasıl yapılıyor?</span>
+                            </button>
+                            <div class="ub-faq__answer">
+                                <p>Kredi kartı, havale/EFT ve diğer güvenli ödeme yöntemleriyle kolayca ödeme yapabilirsiniz.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!-- Faq end here -->
+
+        <!-- Cta start here -->
+        <section id="ub-cta" class="ub-cta">
+            <div class="ub-cta__container container">
+                <div class="ub-cta__area" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="ub-cta__title" data-aos="fade-up" data-aos-delay="100">Hemen Başlayın, İşinizi Büyütün!</h3>
+                    <p class="ub-cta__desc" data-aos="fade-up" data-aos-delay="300">Stoksuz satış modeliyle e-ticaret dünyasında yerinizi alın.</p>
+                    <div class="ub-cta__btn-group" data-aos="fade-up" data-aos-delay="400">
+                        <a class="ub-cta__btn" href="https://briportal.com/register">Hemen Kayıt Ol</a>
+                    </div>
+                    <div class="ub-cta__background-up"></div>  
+                    <div class="ub-cta__background-up"></div>  
+                </div>
+            </div>
+        </section>
+        <!-- Cta end here -->
+
+    </main>
+
+        <!-- footer start here -->
+        <footer id="footer" class="footer"> 
+            <div class="footer__container container">
+                <div class="footer__content">
+                    <!-- Newsletter Section -->
+                    <div class="footer__newsletter">
+                        <div class="footer__newsletter-heading">
+                            <h3 class="footer__newsletter-title">Bültenimize Katılın</h3>
+                            <p class="footer__newsletter-desc">E-ticaret dünyasından haberler ve özel fırsatlar için abone olun.</p>
+                        </div>
+                        <div class="footer__form-wrapper">
+                            <form action="#" class="footer__newsletter-form">
+                                <div class="footer__input-wrapper">
+                                    <input type="email" class="footer__input" placeholder="E-posta adresiniz">
+                                    <input class="btn footer__submit-btn" type="submit" value="Abone Ol">
+                                </div>
+                                <p id="footer__form-message" class="footer__form-message success-message"></p>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="footer__content-wrapper">
+                        <!-- Logo Section Wrapper -->
+                        <div class="footer__logo-wrapper">
+                            <div class="footer__logo-inner-wrapper">
+                                <a href="index.html" class="footer__logo-link">
+                                    <img src="./assets/img/logo/logo.svg" alt="Logo" class="footer__logo-img">
+                                </a>
+                                <p class="footer__desc">Bri.com.tr stok tutmadan satış yapmak isteyen işletmeler için dropshipping, lojistik ve XML entegrasyon çözümleri sunar.</p>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Section Wrapper -->
+                        <div class="footer__navigation-wrapper">
+                            <div class="footer__navigation-column">
+                                <h3 class="footer__navigation-title">Sayfalar</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="./about.html" class="footer__link">Hakkımızda</a></li>
+                                    <li class="footer__link-item"><a href="./pricing.html" class="footer__link">Fiyatlarımız</a></li>
+                                    <li class="footer__link-item"><a href="./blog.html" class="footer__link">Blog</a></li>
+                                    <li class="footer__link-item"><a href="./contact.html" class="footer__link">İletişim</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__navigation-column">
+                                <h3 class="footer__navigation-title">Şirket</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="./about.html" class="footer__link">Hakkımızda</a></li>
+                                    <li class="footer__link-item"><a href="./blog.html" class="footer__link">Blog</a></li>
+                                     <li class="footer__link-item"><a href="./pricing.html" class="footer__link">Fiyatlarımız</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__navigation-column">
+                                <h3 class="footer__navigation-title">Linkler</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="https://briportal.com/" class="footer__link">Bri Portal</a></li>
+                                    <li class="footer__link-item"><a href="https://babynow.com.tr/" class="footer__link">Babynow Shop</a></li>
+                                    <li class="footer__link-item"><a href="https://babynowtoptan.com.tr/" class="footer__link">Babynow Toptan</a></li>
+                                    <li class="footer__link-item"><a href="https://bri.com.tr" class="footer__link">Bri</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__navigation-column">
+                                <h3 class="footer__navigation-title">Diğer</h3>
+                                <ul class="footer__links">
+                                    <li class="footer__link-item"><a href="#" class="footer__link">Lisanslar</a></li>
+                                    <li class="footer__link-item"><a href="privacy-policy.html" class="footer__link">Gizlilik Politikası</a></li>
+                                    <li class="footer__link-item"><a href="./terms-and-condition.html" class="footer__link">Hizmet Şartları</a></li>
+                                    <li class="footer__link-item"><a href="./404.html" class="footer__link">404</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Copyright Section -->
+                    <div class="footer__copyright">
+                        <div class="footer__copyright-text">
+                            <p>&copy;<span class="footer__company-name">bri.com.tr</span>. All rights reserved. 2025  
+                            <span class="footer__divider">|</span> Designed by <a href="https://www.telegram.com/@By_Azade" class="footer__link">ByAzade</a>  
+                        </div>
+                        
+                        <div class="footer__social-links">
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item">
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/LinkedIn.svg" alt="LinkedIn Icon" class="footer__social-icon">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/X.svg" alt="Twitter Icon" class="footer__social-icon">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a href="https://www.instagram.com/bri.com.tr" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/instagram.svg" alt="Instagram Icon" class="footer__social-icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end here --> 
+
+ 
+    <!-- js  -->
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- SweetAlert2 js  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Swiper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Main js -->
+    <script src="./assets/js/srcipts.js"></script>
+    <!-- Form js -->
+    <script src="./assets/js/form.js"></script>   
+    <!-- Blog Loader js -->
+    <script src="./assets/js/blog-loader.js"></script>
+    <!-- Pricing Loader js -->
+    <!-- <script src="./assets/js/pricing-loader.js"></script> -->
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        lucide.createIcons();
+        
+        // Sliding cards with continuous drag functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const wrapper = document.querySelector('.ub-sliding-cards__wrapper');
+            const track = document.querySelector('.ub-sliding-cards__track');
+            
+            if (!wrapper || !track) return;
+            
+            const originalCards = Array.from(track.children);
+            const totalOriginalCards = originalCards.length;
+            
+            // Create many clones for smooth infinite scroll
+            for (let i = 0; i < 20; i++) { // More clones for smoother infinite scroll
+                originalCards.forEach(card => {
+                    const clone = card.cloneNode(true);
+                    track.appendChild(clone);
+                });
+            }
+            
+            let isDragging = false;
+            let startX = 0;
+            let currentTranslate = 0;
+            let animationFrame = 0;
+            let velocity = 0;
+            let lastTime = 0;
+            let lastX = 0;
+            
+            // Calculate card dimensions
+            function getCardDimensions() {
+                const cardWidth = originalCards[0].offsetWidth;
+                const gap = window.innerWidth >= 1025 ? 30 : (window.innerWidth >= 769 ? 25 : 20);
+                return { cardWidth, gap, cardWithGap: cardWidth + gap };
+            }
+            
+            let { cardWidth, gap, cardWithGap } = getCardDimensions();
+            const oneSetWidth = cardWithGap * totalOriginalCards;
+            
+            // Start from the middle
+            currentTranslate = -oneSetWidth * 10; // Start from middle of clones
+            track.style.transform = `translateX(${currentTranslate}px)`;
+            
+            function checkInfiniteLoop() {
+                // Smooth infinite loop - when reaching boundaries, smoothly reset position
+                if (currentTranslate > -oneSetWidth * 5) {
+                    // Moving too far right, smoothly reset to middle-left
+                    currentTranslate -= oneSetWidth * 10;
+                    track.style.transition = 'none';
+                    track.style.transform = `translateX(${currentTranslate}px)`;
+                    requestAnimationFrame(() => {
+                        track.style.transition = '';
+                    });
+                } else if (currentTranslate < -oneSetWidth * 15) {
+                    // Moving too far left, smoothly reset to middle-right
+                    currentTranslate += oneSetWidth * 10;
+                    track.style.transition = 'none';
+                    track.style.transform = `translateX(${currentTranslate}px)`;
+                    requestAnimationFrame(() => {
+                        track.style.transition = '';
+                    });
+                }
+            }
+            
+            function updatePosition() {
+                if (!isDragging && Math.abs(velocity) > 0.1) {
+                    // Apply momentum when not dragging
+                    currentTranslate += velocity;
+                    velocity *= 0.95; // Friction
+                    checkInfiniteLoop();
+                    track.style.transform = `translateX(${currentTranslate}px)`;
+                    requestAnimationFrame(updatePosition);
+                }
+            }
+            
+            // Mouse events
+            wrapper.addEventListener('mousedown', startDrag);
+            document.addEventListener('mousemove', drag);
+            document.addEventListener('mouseup', endDrag);
+            
+            // Touch events
+            wrapper.addEventListener('touchstart', startDrag, { passive: false });
+            document.addEventListener('touchmove', drag, { passive: false });
+            document.addEventListener('touchend', endDrag);
+            
+            function startDrag(e) {
+                isDragging = true;
+                wrapper.classList.add('dragging');
+                track.classList.add('dragging');
+                track.style.transition = 'none';
+                
+                const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+                startX = clientX;
+                lastX = clientX;
+                lastTime = Date.now();
+                velocity = 0;
+                
+                cancelAnimationFrame(animationFrame);
+                e.preventDefault();
+            }
+            
+            function drag(e) {
+                if (!isDragging) return;
+                e.preventDefault();
+                
+                const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+                const deltaX = clientX - lastX;
+                const currentTime = Date.now();
+                const deltaTime = currentTime - lastTime;
+                
+                // Calculate velocity for momentum
+                if (deltaTime > 0) {
+                    velocity = deltaX / deltaTime * 16; // 60fps adjustment
+                }
+                
+                currentTranslate += deltaX;
+                lastX = clientX;
+                lastTime = currentTime;
+                
+                checkInfiniteLoop();
+                
+                animationFrame = requestAnimationFrame(() => {
+                    track.style.transform = `translateX(${currentTranslate}px)`;
+                });
+            }
+            
+            function endDrag(e) {
+                if (!isDragging) return;
+                
+                isDragging = false;
+                wrapper.classList.remove('dragging');
+                track.classList.remove('dragging');
+                
+                cancelAnimationFrame(animationFrame);
+                
+                // Start momentum scrolling
+                updatePosition();
+            }
+            
+            // Prevent default behaviors
+            track.addEventListener('dragstart', e => e.preventDefault());
+            wrapper.addEventListener('selectstart', e => e.preventDefault());
+            
+            // Only horizontal scroll support (no vertical)
+            wrapper.addEventListener('wheel', (e) => {
+                // Only handle horizontal scroll (deltaX)
+                const deltaX = e.deltaX;
+                
+                if (Math.abs(deltaX) > 0) {
+                    e.preventDefault();
+                    currentTranslate -= deltaX * 2; // Horizontal scroll sensitivity
+                    checkInfiniteLoop();
+                    track.style.transform = `translateX(${currentTranslate}px)`;
+                }
+            }, { passive: false });
+            
+            // Touchpad gesture support for horizontal swipe only
+            let touchStartX = 0;
+            let isHorizontalGesture = false;
+            
+            wrapper.addEventListener('touchstart', (e) => {
+                if (e.touches.length === 2) {
+                    touchStartX = e.touches[0].clientX;
+                    isHorizontalGesture = false;
+                }
+            }, { passive: false });
+            
+            wrapper.addEventListener('touchmove', (e) => {
+                if (e.touches.length === 2 && !isDragging) {
+                    const touchCurrentX = e.touches[0].clientX;
+                    const deltaX = touchCurrentX - touchStartX;
+                    
+                    // Only handle horizontal gestures
+                    if (Math.abs(deltaX) > 10) {
+                        e.preventDefault();
+                        isHorizontalGesture = true;
+                        currentTranslate += deltaX * 2;
+                        checkInfiniteLoop();
+                        track.style.transform = `translateX(${currentTranslate}px)`;
+                        touchStartX = touchCurrentX;
+                    }
+                }
+            }, { passive: false });
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    currentTranslate += cardWithGap;
+                    checkInfiniteLoop();
+                    track.style.transition = 'transform 0.3s ease-out';
+                    track.style.transform = `translateX(${currentTranslate}px)`;
+                    setTimeout(() => {
+                        track.style.transition = 'none';
+                    }, 300);
+                } else if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    currentTranslate -= cardWithGap;
+                    checkInfiniteLoop();
+                    track.style.transition = 'transform 0.3s ease-out';
+                    track.style.transform = `translateX(${currentTranslate}px)`;
+                    setTimeout(() => {
+                        track.style.transition = 'none';
+                    }, 300);
+                }
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                const newDimensions = getCardDimensions();
+                const oldOneSetWidth = oneSetWidth;
+                cardWidth = newDimensions.cardWidth;
+                gap = newDimensions.gap;
+                cardWithGap = newDimensions.cardWithGap;
+                
+                // Maintain relative position during resize
+                const relativePosition = currentTranslate / oldOneSetWidth;
+                const newOneSetWidth = cardWithGap * totalOriginalCards;
+                currentTranslate = relativePosition * newOneSetWidth;
+                track.style.transform = `translateX(${currentTranslate}px)`;
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+/* Features kartları 3x2 düzen */
+.ub-features__area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.ub-features__card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+}
+
+.ub-features__image-wrapper {
+    margin-bottom: 20px;
+}
+
+.ub-features__image {
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+/* Tablet - 2 kolon */
+@media (max-width: 1024px) {
+    .ub-features__area {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Mobil - 1 kolon */
+@media (max-width: 768px) {
+    .ub-features__area {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .ub-features__card {
+        padding: 24px;
+    }
+    
+    .ub-features__image {
+        max-width: 90px;
+    }
+}

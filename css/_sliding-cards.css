@@ -1,0 +1,216 @@
+/* Sliding Cards Section */
+.ub-sliding-cards {
+    padding: 80px 0;
+    background: #f8fafc;
+    overflow: hidden;
+}
+
+.ub-sliding-cards__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ub-sliding-cards__header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ub-sliding-cards__subtitle-area {
+    margin-bottom: 20px;
+}
+
+.ub-sliding-cards__subtitle-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(25, 52, 112, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #193470;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.ub-sliding-cards__title {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.ub-sliding-cards__desc {
+    font-size: 18px;
+    color: #64748b;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ub-sliding-cards__wrapper {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.ub-sliding-cards__track {
+    display: flex;
+    gap: 30px;
+    animation: slide 20s linear infinite;
+    width: calc(200% + 60px);
+}
+
+.ub-sliding-cards__track:hover {
+    animation-play-state: paused;
+}
+
+.ub-sliding-cards__card {
+    flex: 0 0 calc(33.333% - 20px);
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.ub-sliding-cards__card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.ub-sliding-cards__image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+}
+
+.ub-sliding-cards__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.ub-sliding-cards__card:hover .ub-sliding-cards__image img {
+    transform: scale(1.05);
+}
+
+.ub-sliding-cards__content {
+    padding: 30px 25px;
+}
+
+.ub-sliding-cards__card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.ub-sliding-cards__card-desc {
+    font-size: 15px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .ub-sliding-cards {
+        padding: 60px 0;
+    }
+    
+    .ub-sliding-cards__container {
+        padding: 0 15px;
+    }
+    
+    .ub-sliding-cards__header {
+        margin-bottom: 40px;
+    }
+    
+    .ub-sliding-cards__track {
+        gap: 20px;
+        animation: slideMobile 15s linear infinite;
+    }
+    
+    .ub-sliding-cards__card {
+        flex: 0 0 calc(85% - 10px);
+        touch-action: pan-y;
+    }
+    
+    .ub-sliding-cards__image {
+        height: 160px;
+    }
+    
+    .ub-sliding-cards__content {
+        padding: 20px;
+    }
+    
+    .ub-sliding-cards__card-title {
+        font-size: 18px;
+    }
+    
+    .ub-sliding-cards__card-desc {
+        font-size: 14px;
+    }
+    
+    .ub-sliding-cards__track:active {
+        animation-play-state: paused;
+    }
+    
+    @keyframes slideMobile {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-70%);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .ub-sliding-cards__card {
+        flex: 0 0 calc(90% - 10px);
+    }
+}
+
+/* Tablet responsive */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ub-sliding-cards__card {
+        flex: 0 0 calc(40% - 15px);
+    }
+    
+    .ub-sliding-cards__track {
+        animation: slideTablet 18s linear infinite;
+    }
+    
+    @keyframes slideTablet {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-60%);
+        }
+    }
+}
+
+/* Add touch interaction for mobile */
+@media (hover: none) and (pointer: coarse) {
+    .ub-sliding-cards__track {
+        animation-duration: 25s;
+    }
+    
+    .ub-sliding-cards__card:active {
+        animation-play-state: paused;
+    }
+}
