@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #193470;
+  --color-primary-dark: #19366f;
+  --color-text-primary: #181D27;
+  --color-light-gray-blue: #E9EAEB;
+  --color-deep-violet: #1b4c73;
+  --color-soft-lilac: #e8f0f7;
+  --color-dark-neutral: #171717;
+  --color-light-bg: #f0f5f9;
+  --color-dark-gray: #404040;
+  --color-purple-haze: #d9e5f0;
+  --color-light-purple: #c9dce9;
+  --color-light-lavender: #e3edf5;
+  --color-gray-medium: #737373;
+  --color-dark-slate-gray: #414651;
+  --color-soft-purple: #1b4c73;
+  --color-muted-sage: #717680;
+  --color-dark-grayish-green: #535862;
+  --color-light-gray: #EDEDED;
+  --color-background-light-green: #e0eaf2;
+
+  --font-family-sans: 'GeneralSans', sans-serif;
+  --font-family-body: 'GeneralSans', sans-serif;
+}
+
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('/assets/fonts/GeneralSans-Variable.woff2') format('woff2'),
+       url('/assets/fonts/GeneralSans-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  font-family: var(--font-family-body);
+  color: var(--color-text-primary);
+  background-color: white;
+}
+
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
