@@ -1,0 +1,11 @@
+
+# yedek varsayilanlari
+node_modules/
+.next/
+dist/
+build/
+.gradle/
+Pods/
+DerivedData/
+.dart_tool/
+.DS_Store
